@@ -27,7 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //mongoose.connect("mongodb://localhost:27017/diary2", {useNewUrlParser:true, useUnifiedTopology: true, useFindAndModify:false});
-mongoose.connect("mongodb+srv://admin_jyotsna:jojo123@cluster0.bqhnk.mongodb.net/diary", {useNewUrlParser:true, useUnifiedTopology: true, useFindAndModify:false});
+mongoose.connect("mongodb+srv://admin_jyotsna:"+process.env.MONGOPASSWORD+"@cluster0.bqhnk.mongodb.net/diary", {useNewUrlParser:true, useUnifiedTopology: true, useFindAndModify:false});
 
 mongoose.set("useCreateIndex", true);
 
