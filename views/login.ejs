@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" required>
+            <br>
+            <label for="lname">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
+            <br>
+            <button type="submit" class="myButton">Login</button>
+</form>
+
+<%- include("partials/footer") %>

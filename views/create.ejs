@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<div class="createentry">
+    <form action="/create/<%= username %>" method="post">
+        <label for="heading">Entry Heading:</label>
+        <input type="text" id="heading" name="heading" placeholder="Entry Heading" autocomplete="off">
+        <br>
+        <br><br>
+        <label for="bod">Body:</label>
+        <textarea id="bod" name="bod" class="form-control" cols="100" rows="7" placeholder="Entry Body" autocomplete="off"></textarea>
+        <br>
+        <button type="submit" name="create" value="<%= username %>" class="myButton">Create</button>
+    </form>
+</div>
+<%- include("partials/footer") %>

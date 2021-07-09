@@ -1,0 +1,80 @@
+.header {
+  background-color:rgb(63, 0, 0);
+  color: antiquewhite;
+  font-family: fantasy;
+  font-size: 50px;
+  /* background-image: linear-gradient(to right, #191d15 0%, #27c9a3 100%); */
+}
+.footer {
+  position: static;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  margin-top: 30%;
+  background-color: rgb(63, 0, 0);
+}
+
+.footer p {
+  margin-top: 0.5%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.back {
+  background-image: url("/images/manu.jpeg");
+  background-color: bisque;
+}
+.box {
+  margin-top: 5%;
+  border-style:inset;
+  border-radius: 2%;
+  border-width: 9px;
+  border-color: rgb(63, 0, 0);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+  background-color: rgba(249, 235, 199, 0.776);
+  color: rgb(63, 0, 0);
+  font-family: fantasy;
+  font-size: 150% ;
+}
+.pageHeader{
+    color: rgb(63, 0, 0);
+    font-family: fantasy;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.diaryentry{
+    /* background-color: rgba(240, 255, 248, 0.591); */
+    background-image: url("/images/notebook.jpeg");
+    border-style: dotted;
+    border-width: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: rgb(0, 0, 41);
+    color: rgb(0, 0, 84);
+    font-family: cursive;
+    font-size: x-large;
+}
+.entryheading{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.myButton{
+    color: rgb(63, 0, 0);
+    font-style: inherit;
+    border-style: outset;
+    border-width: 10%;
+    border-color: rgb(63, 0, 0);
+    background-color: seashell;
+    text-align: center;
+    align-items: center;
+}
+.date{
+    text-align: right;
+}
+.buttoncontainer{
+    text-align: center;  
+}

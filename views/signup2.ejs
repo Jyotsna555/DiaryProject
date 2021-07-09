@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+<form action="/signup2" method="post">
+            <!-- <label for="uname">Create a Username:</label>
+            <input type="text" id="uname" name="uname" placeholder="Username" autocomplete="off">
+            <br> -->
+            <label for="lname">Create a password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
+            <small id="emailHelp" class="form-text text-muted">Should be at least 5 characters long!</small>
+            <br>
+            <button type="submit" class="myButton">Create account</button>
+</form>
+
+<%- include("partials/footer") %>

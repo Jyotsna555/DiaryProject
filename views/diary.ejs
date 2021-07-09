@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+<div class="diarypage">
+    <% userentries.forEach(function(d) { %>
+        <div class="diaryentry">
+            <div class="date">
+                <p><%=d.day%></p>
+            </div>
+            <p><span class="entryheading"><%=d.entryheading%></span></p>
+            <p> <%=d.entrybody%> </p>
+        </div>
+    <% })  %>
+</div>
+<br>
+<form action="/deleteentries/<%= username %> " method="post">
+    <div class="buttoncontainer">
+        <button class="myButton" name="deleteentries" value="<%= username %>" type="submit">Get rid of all entries!!</button>
+    </div>
+</form>
+<br><br>
+<form action="/createentry/<%= username %> " method="post">
+    <div class="buttoncontainer">
+        <button class="myButton" name="createentry" type="submit" value="<%= username %> ">Create new entry</button>
+    </div>
+</form>
+<br>
+<form action="/logout/<%= username %> " method="post">
+    <div class="buttoncontainer">
+        <button class="myButton" type="submit">Logout</button>
+    </div>
+</form>
+
+<%- include("partials/footer") %>
